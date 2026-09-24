@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Snoopy Case</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <div>
+        <div class="brand">Snoopy Case</div>
+        <div class="subtitle">играй • открывай • собирай</div>
+      </div>
+      <div class="balance">⭐ <span id="balance">0</span></div>
+    </header>
+
+    <main id="content">
+      <section class="hero">
+        <div>
+          <span class="pill">ЕЖЕДНЕВНО</span>
+          <h1>Бесплатный кейс</h1>
+          <p>Открывай один бесплатный кейс каждый день и получай виртуальные очки.</p>
+          <button class="primary" id="dailyBtn">Открыть кейс</button>
+          <div class="timer" id="dailyTimer"></div>
+        </div>
+        <div class="gift">🎁</div>
+      </section>
+
+      <section class="grid">
+        <button class="card blue" data-page="cases"><span>🎁</span><b>Кейсы</b><small>Открывай кейсы и получай награды</small></button>
+        <button class="card cyan" data-page="games"><span>🎮</span><b>Игры</b><small>Мини-игры за виртуальные очки</small></button>
+        <button class="card light" data-page="upgrade"><span>📈</span><b>Апгрейд</b><small>Улучшай свои виртуальные награды</small></button>
+        <button class="card navy" data-page="shop"><span>🛒</span><b>Магазин</b><small>Витрина виртуальных предметов</small></button>
+      </section>
+    </main>
+
+    <nav class="bottom">
+      <button class="nav active" data-page="home">⌂<small>Игры</small></button>
+      <button class="nav" data-page="leaders">🏆<small>Лидеры</small></button>
+      <button class="nav" data-page="shop">🛒<small>Магазин</small></button>
+      <button class="nav" data-page="profile">👤<small>Профиль</small></button>
+    </nav>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
